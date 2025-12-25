@@ -44,7 +44,7 @@ python lora_train.py
 python create_data.py
 ```
 
-此脚本会生成* *`findpo_train_data.jsonl` 文件。
+此脚本会生成`findpo_train_data.jsonl` 文件。
 
 ### 4. 第三阶段：直接偏好优化 (DPO)
 
@@ -54,7 +54,7 @@ python create_data.py
 python dpo_train.py
 ```
 
-对齐后的模型将保存在* *`./qwen2-0.5b-dpo-aligned`。
+对齐后的模型将保存在`./qwen2-0.5b-dpo-aligned`。
 
 ### 5. 系统评估
 
@@ -64,7 +64,7 @@ python dpo_train.py
 python cot_eval.py
 ```
 
-评估结果将保存为* *`full_alignment_eval_report.csv`，包含每种策略的得分及裁判评语。
+评估结果将保存为`full_alignment_eval_report.csv`，包含每种策略的得分及裁判评语。
 
 ## 📊 实验指标
 
@@ -72,6 +72,5 @@ python cot_eval.py
 
 - **SFT Loss 曲线**: 保存于 `./qwen2-0.5b-fin-lora/loss_curve.png`。
 - **DPO 综合指标**: 包含对齐准确率（Accuracy）和奖励差值（Margin），保存于 `./qwen2-0.5b-dpo-aligned/dpo_metrics.png`。
-
 
 
