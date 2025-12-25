@@ -14,7 +14,7 @@ os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 llm = ChatOpenAI(
     model="qwen-max",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-    api_key="sk-62823ac2c480482084d040855d2e5a15",
+    api_key="your api key here",  # 替换为你的 API Key
     streaming=False
 )
 

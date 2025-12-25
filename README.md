@@ -14,7 +14,7 @@
 
 - `test_lora.py`: 用于测试 SFT 阶段后的模型推理效果。
 - `test_dpo.py`: 用于加载对齐后的完整模型（SFT 合并层 + DPO 适配器），测试其在金融问答和情感分析中的表现。
-- `cot_eval.py`: 系统评估框架。支持 **Standard**、**Chain-of-Thought (CoT)** 和 **Tree-of-Thought (ToT)** 三种提示策略的推理，并调用高级模型（如 Qwen-Max/GPT-4）作为裁判进行自动化打分。
+- `cot_eval.py`: 系统评估框架。支持 **Standard**、**Chain-of-Thought (CoT)** 和 **Tree-of-Thought (ToT)** 三种提示策略的推理，并调用高级模型（如 Qwen-Max）作为裁判进行自动化打分。
 
 ## 🚀 快速开始
 
